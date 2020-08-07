@@ -1,30 +1,15 @@
-# generated_backend
+# Backend
 
 ## Setup
 
-1. Go to project folder
-
-> cd generated_backend
+> cd backend
 
 2. Install Dependencies
 
-> npm run setup
+> npm install
 
-3. Create .env with following content
-
-````
-DB_URL=
-
-PORT=3000
-SECRET=AAA
-````
-
-## Run
+# Run#
 
 1. Start Server
 
 > npm start
-
-2. Open in url or using an Endpoint tester (postman)
-
-> http://127.0.0.1:3000/
