@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: #443053;
+}
+code {
+  font-family: "Dancing Script", cursive;
+}
+h5 {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: #c67734;
+}
+.csnav {
+  z-index: 4;
+}
+
+.leftnav {
+  height: 100vh;
+  width: 25vh;
+  transition: ease-in-out 200ms;
+  position: fixed;
+  box-shadow: 0.25rem 1rem 0.75rem 0.5rem #c67734;
+}
+
+.topnav {
+  width: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+.leftnav:hover {
+  width: 35vh;
+  transition: ease-in-out 200ms;
+}
+
+.csnav-btn {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.csnavBox {
+  word-wrap: break-word;
+  overflow-y: scroll;
+  right: 0;
+  z-index: 3;
+  max-height: 28vh;
+}
+.csnavBox::-webkit-scrollbar-track {
+  background: black;
+}
+.csnavBox::-webkit-scrollbar-thumb {
+  background: #c67734;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border: 0.25rem #c67734;
+  border-radius: 1rem;
+}
+.csnavBox::-webkit-scrollbar {
+  margin-left: 1rem;
+  width: 0.5rem;
+}
+
+.input-group {
+  align-items: center;
+}
+
+.background {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: no-repeat center fixed;
+}
+
+.ss4 {
+  background-image: url("./Sweet-S4.png");
+  position: fixed;
+}
+.ss3 {
+  background: url("./Sweet-S3.png");
+}
+.chatpage {
+  margin-right: 0;
+}
+.chat {
+  flex-direction: column;
+}
+
+.chatbox {
+  word-wrap: break-word;
+  overflow-y: scroll;
+  z-index: 0;
+  box-shadow: -4px 5px 12px 6px #c67734;
+  background-size: cover;
+  height: 80vh;
+}
+.chatbox::-webkit-scrollbar-track {
+  background: black;
+}
+.chatbox::-webkit-scrollbar-thumb {
+  background: #c67734;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border: 0.25rem #c67734;
+  border-radius: 1rem;
+}
+.chatbox::-webkit-scrollbar {
+  margin-left: 1rem;
+  width: 0.5rem;
+}
+
+.btn {
+  background-color: #443053;
+}
+.btn:hover {
+  background-color: black;
+  color: #443053;
+  text-decoration: none;
+}
+
+.dialog {
+  display: flex;
+  width: 40rem;
+  height: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  flex-direction: column;
+  z-index: 4;
+}
+
+.dialogBtn {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.dialogText {
+  display: flex;
+  margin: auto;
+}
+.dialogOptions {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.overlay {
+  display: none;
+}
+.overlay.show {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
