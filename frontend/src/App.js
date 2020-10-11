@@ -19,7 +19,7 @@ class App extends Component {
   constructor() {
     super();
 
-    this.proxy = process.env.REACT_APP_PROXY;
+    this.proxy = "http://localhost:5000";
     this.socket = io.connect(this.proxy);
     this.state = {
       loggedIn: false,
@@ -42,6 +42,7 @@ class App extends Component {
   }
   componentDidMount() {
     this._isMounted = true;
+    console.log(process.env);
     this.setState({ redirectTo: null });
     this.socket.on("init", (data) => {
       this.addFlash({ success: true, msg: data });

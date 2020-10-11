@@ -10,7 +10,7 @@ const MongoStore = require("connect-mongo")(session);
 require("./passport")(passport);
 const app = express();
 app.use(cors());
-const PORT = 8080;
+const PORT = 5000;
 require("dotenv").config();
 
 const chatroom = require("./routes/chatroom.js");
